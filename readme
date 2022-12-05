@@ -3,12 +3,12 @@ Assignment 5 readme File
 ------------------------------------------------------------------------
 Student 1: What is your name?
 
-
+Michael Tsai
 
 ------------------------------------------------------------------------
 Student 2: What is your name?
 
-
+Amber Chow
 
 ------------------------------------------------------------------------
 Student 1: What authorized sources of information did you use to
@@ -78,15 +78,33 @@ particular, what bugs are in your submission?
 ------------------------------------------------------------------------
 What is your mywc program test plan?
 
+Boundary Tests
+mywc001.txt: contains nothing, should return 0, 0, 0
+mywc002.txt: only contains new lines, but no spaces
+mywc003.txt: random characters
+mywc004.txt: just a simple one liner
+mywc005.txt: alternate new lines
+mywc006.txt: alternate spaces
 
+Statement Tests
+mywcproberbmodified.txt iterates through the program and hits every statement. Since it does not end with space, new line, or tab character, it correctedly does statement 53 to finish the word count.
+
+Stress Tests
+mywcStressTest.txt: stresses the program by printing 50000 random characters
+mywcStressTest2.txt: stresses the program by printing 1000 lines
 
 ------------------------------------------------------------------------
 What are the CPU times consumed by the programs from Parts 2a, 2b, 2d,
 2e, and 2f to compute fib(250000) on armlab? Fill in the blanks.
 
-Part 2a:  _____ seconds
+------------------------------------------------------------------------
+Study the given code. Then build a fib program consisting of the files fib.c, bigint.c, and bigintadd.c, with no optimizations (that is, without the -D NDEBUG option and without the -O option, as described below). Run the program to compute fib(250000). In your readme file note the amount of CPU time consumed.
+------------------------------------------------------------------------
 
-Part 2b:  _____ seconds
+
+Part 2a:   11.923216 seconds seconds
+
+Part 2b:  2.789898 seconds
 
 Part 2d:  _____ seconds
 
